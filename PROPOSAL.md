@@ -11,6 +11,7 @@ Native Replacement is an application that utilizes iNaturalist to identify plant
 ## MVP
 - Identify any non-native plant
 - Compute a native plant most equivalent in size, shape, spread, etc.
+- User can search and browse native plants by filter
 
 ## Stretch Goals
 - Potted plants considered as a replacement factor
@@ -18,7 +19,9 @@ Native Replacement is an application that utilizes iNaturalist to identify plant
 - User can find where to purchase natives or find native lawn specialists
 - Member can save current non-native plants
 - Member can save equivalent native plants
-- Member can modify or delete any saved plants
+- Member can save native plants from browsing
+- Member can delete any saved plants
+- Member can modified a saved native plant from browsing to a landscape plant
 
 ## Ultra Stretch Goals
 - Member can "draw" their landscape with plants in their location (would need a landscaping application)
