@@ -5,8 +5,10 @@
 Native Replacement is an application that utilizes iNaturalist to identify plants. The goal is to identify non-native ornamental or invasive plant species and find a suitable native replacement. The idea of using a native replacement is to benefit native fauna in the area and minimize plant or lawn care. Currently, the applcation will be focused on the Houston area.
 
 ## Tech Stack
-- MERN
+- PERN Stack
 - iNaturalist API https://api.inaturalist.org/v1/docs/
+- Trefle API https://docs.trefle.io/
+- NatureServe Explorer REST API https://explorer.natureserve.org/api-docs/ 
 
 ## MVP
 - Identify any non-native plant
