@@ -4,6 +4,18 @@ function Header() {
     return (
         <header>
             <h1>Native Replacement!</h1>
+            <nav>
+                <div className='sign-in'>
+                    Sign In
+                </div>
+                <div className='nav'>
+                    <ul>
+                        <li>Identify</li>
+                        <li>Browse Natives</li>
+                        {/* <li>Favorites</li> */}
+                    </ul>
+                </div>
+            </nav>
         </header>
     )
 }
