@@ -3,19 +3,19 @@ import React from 'react';
 function Header() {
     return (
         <header>
-            <h1 className='border'>Native Replacement!</h1>
-            <nav>
-                <div className='sign-in'>
-                    Sign In
+            <div>
+                <div className='row'>
+                    <h1 className='col'>Native Replacement!</h1>
+                    <div className='sign-in col'><a href='#'>Sign In</a></div>
                 </div>
-                <div className='nav'>
-                    <ul>
-                        <li>Identify</li>
-                        <li>Browse Natives</li>
-                        {/* <li>Favorites</li> */}
-                    </ul>
-                </div>
-            </nav>
+                <nav>
+                    <div className='navbar-nav'>
+                        <div><a href='#'>Identify</a></div>
+                        <div><a href='#'>Browse Natives</a></div>
+                        {/* <div>Favorites</div> */}
+                    </div>
+                </nav>
+            </div>
         </header>
     )
 }
