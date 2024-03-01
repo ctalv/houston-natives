@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         <header>
-            <h1>Native Replacement!</h1>
+            <h1 className='border'>Native Replacement!</h1>
             <nav>
                 <div className='sign-in'>
                     Sign In
