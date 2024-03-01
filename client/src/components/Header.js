@@ -1,21 +1,30 @@
 import React from 'react';
+import "bootstrap/js/src/collapse.js";
 
 function Header() {
     return (
         <header>
-            <div>
-                <div className='row'>
-                    <h1 className='col'>Native Replacement!</h1>
-                    <div className='sign-in col'><a href='#'>Sign In</a></div>
-                </div>
-                <nav>
-                    <div className='navbar-nav'>
-                        <div><a href='#'>Identify</a></div>
-                        <div><a href='#'>Browse Natives</a></div>
-                        {/* <div>Favorites</div> */}
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#">Native Replacement!</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">Sign In</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Identify</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Browse Natives</a>
+                            </li>
+                        </ul>  
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
     )
 }
