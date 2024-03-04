@@ -1,7 +1,7 @@
 import React from 'react';
 import "bootstrap/js/src/collapse.js";
 
-function Header() {
+function Navbar() {
     return (
         <header>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,4 +29,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Navbar;

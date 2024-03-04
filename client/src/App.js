@@ -1,16 +1,27 @@
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
 import './App.css';
-import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Navbar from './components/Navbar';
+import Homepage from './components/Homepage';
+import Footer from './components/Footer';
+import SignIn from './components/SignIn';
+import Favorites from './pages/Favorites';
+import Scanner from './pages/Scanner';
+import UserPlants from './pages/UserPlants';
+// import UserYard from './pages/UserYard';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Header />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Homepage/>}></Route>
+      </Routes>
     </div>
+    </Router>
   );
 }
 
