@@ -20,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>}></Route>
       </Routes>
+      <Footer />
     </div>
     </Router>
   );
