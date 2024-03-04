@@ -1,6 +1,8 @@
 import React from 'react';
 import "bootstrap/js/src/collapse.js";
 
+import SignIn from './pages/SignIn';
+
 function Navbar() {
     return (
         <header>
