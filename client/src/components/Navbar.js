@@ -1,7 +1,8 @@
 import React from 'react';
 import "bootstrap/js/src/collapse.js";
+import { Link } from 'react-router-dom'
 
-import SignIn from './pages/SignIn';
+// import SignIn from '../pages/Login';
 
 function Navbar() {
     return (
@@ -18,11 +19,16 @@ function Navbar() {
                                 <a className="nav-link active" aria-current="page" href="#">Sign In</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Identify</a>
+                                <Link to="/scanner" className="nav-link" href="#">Scan</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Browse Natives</a>
+                                <Link to="/browse" className="nav-link">Browse Natives</Link>
                             </li>
+                            if (signedin) {
+                                <li className="nav-item">
+                                    <Link to="/myplants" className="nav-link">My Yard</Link>
+                                </li>
+                            }
                         </ul>  
                     </div>
                 </div>

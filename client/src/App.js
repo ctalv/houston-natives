@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import Browse from './pages/Browse';
 import Scanner from './pages/Scanner';
 import UserPlants from './pages/UserPlants';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 // import UserYard from './pages/UserYard';
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
         <Route path='/browse' element={<Browse/>}/>
         <Route path='/scanner' element={<Scanner/>}/>
         <Route path='/myplants' element={<UserPlants/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer />
     </div>
