@@ -4,7 +4,38 @@ import { Link } from 'react-router-dom'
 
 // import SignIn from '../pages/Login';
 
+// const getLogin = Auth.loggedIn()
+const getLogin = false
+
+function showLogin () {
+    if (getLogin) {
+        return (
+            <Link to="/" className="nav-link" onClick={() => Auth.logout()}>Logout</Link>
+        );
+    } else {
+        return (
+            <Link to="/signin" className="nav-link">SignIn</Link>
+        );
+    }
+}
+
+function showMyPlants () {
+    if (getLogin) {
+        return (
+            <li className="nav-item">
+                <Link to="/myplants" className="nav-link">My Yard</Link>
+            
+            </li>
+        );
+    }
+}
+
+
+
+
 function Navbar() {
+
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -16,7 +47,7 @@ function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Sign In</a>
+                                {showLogin()}
                             </li>
                             <li className="nav-item">
                                 <Link to="/scanner" className="nav-link" href="#">Scan</Link>
@@ -24,11 +55,7 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link to="/browse" className="nav-link">Browse Natives</Link>
                             </li>
-                            if (signedin) {
-                                <li className="nav-item">
-                                    <Link to="/myplants" className="nav-link">My Yard</Link>
-                                </li>
-                            }
+                            {showMyPlants()}
                         </ul>  
                     </div>
                 </div>
