@@ -1,6 +1,8 @@
 import React from 'react';
 import "bootstrap/js/src/collapse.js";
 import { Link } from 'react-router-dom'
+import Auth from "../utils/auth";
+
 
 // import SignIn from '../pages/Login';
 
@@ -14,7 +16,7 @@ function showLogin () {
         );
     } else {
         return (
-            <Link to="/signin" className="nav-link">SignIn</Link>
+            <Link to="/signin" className="nav-link">Sign In</Link>
         );
     }
 }
